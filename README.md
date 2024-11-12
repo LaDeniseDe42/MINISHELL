@@ -12,7 +12,7 @@ Une fois la compilation termine, il suffit pour lance le projet de taper :
 ```
 
 <div>
-  <img src="screenshot/mini.png" width="400" height="200">
+  <img src="screenshot/Mini.png" width="400" height="200">
 </div>
 
 ### Vous pouvez maintenant profitez de votre nouveau Shell !
