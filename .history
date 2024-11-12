@@ -24,3 +24,15 @@ echo "yoooy"
 export RISOULET
 env
 exit
+exit
+ls
+cat init_struct
+cat init_struct.c
+help
+!help
+/help
+ls
+rm -f TEST
+rm -r TEST
+ls
+exit
