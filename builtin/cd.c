@@ -49,12 +49,10 @@ void	modif_cd(t_readed *mini, char **pwds)
 
 void	cd(char *path, t_readed *mini, int flag)
 {
-	int		pwd;
 	int		old_pwd;
 	char	*pwds[2];
 
 	g_core.err_code = 0;
-	pwd = ft_search_env("PWD", mini, 1);
 	old_pwd = ft_search_env("OLDPWD", mini, 1);
 	pwds[0] = getcwd(NULL, 4096);
 	if (!path || ft_strncmp("~", path, 2) == 0)

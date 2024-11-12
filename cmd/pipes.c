@@ -54,11 +54,9 @@ void	help_pipe_2(t_pipe *p, t_readed *r)
 void	do_the_pipe(t_readed *r)
 {
 	t_pipe	p;
-	int		temp;
 	int		ret_val;
 
 	init_pipe_struct(&p);
-	temp = 0;
 	ret_val = 0;
 	p.nb_cmd = count_3_tb(r->new_parsed);
 	p.pids = ft_calloc(p.nb_cmd + 1, sizeof(pid_t));
@@ -73,7 +71,6 @@ void	do_the_pipe(t_readed *r)
 	{
 		waitpid(p.pids[p.i], &ret_val, 0);
 		g_core.err_code = WEXITSTATUS(ret_val);
-		temp = 1;
 	}
 	free(p.pids);
 }

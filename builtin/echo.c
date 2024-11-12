@@ -64,7 +64,7 @@ int	n_or_other(char *args)
 		{
 			if (args[j] != 'n')
 				return (1);
-				j++;
+			j++;
 		}
 	}
 	return (0);

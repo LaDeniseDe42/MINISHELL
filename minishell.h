@@ -25,6 +25,7 @@
 # include <readline/history.h>
 # include <errno.h>
 # include <stdarg.h>
+# include <sys/wait.h>
 # include "./libft/libft.h"
 # include "./get_next_line/get_next_line.h"
 
@@ -162,7 +163,7 @@ typedef struct s_treat_temp
 	char	*new;
 }			t_tt;
 
-t_core	g_core;
+extern t_core	g_core;
 
 //main
 void	start_minishell(t_readed *r, char **env, int argc, char **argv);

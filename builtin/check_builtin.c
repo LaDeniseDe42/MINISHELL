@@ -16,10 +16,8 @@ int	check_builtin(t_readed *r, int cmd_nbr)
 {
 	char	**temp;
 	int		i;
-	int		idk;
 
 	i = 0;
-	idk = 0;
 	temp = r->new_parsed[cmd_nbr];
 	if (temp[0] && ft_strncmp("exit", temp[0], 5) == 0)
 	{

@@ -19,7 +19,7 @@ int	exec_single_input(t_readed *r, int cmd_nb, t_index *i)
 	fd = open(r->re[cmd_nb][i->a].output, O_RDONLY);
 	if (fd == -1)
 	{
-		write(2, "Minishell: Problem with file: ", 32);
+		write(2, "Minishell: Problem with file: ", 31);
 		ft_putstr_fd(r->re[cmd_nb][i->a].output, 2);
 		write(2, "\n", 1);
 		error_on_redir(r, cmd_nb, i);
@@ -37,7 +37,7 @@ int	exec_single_output(t_readed *r, int cmd_nb, t_index *i)
 	fd = open(r->re[cmd_nb][i->a].output, O_RDWR | O_CREAT | O_TRUNC, 0644);
 	if (fd == -1)
 	{
-		write(2, "Minishell: Problem with file: ", 32);
+		write(2, "Minishell: Problem with file: ", 31);
 		ft_putstr_fd(r->re[cmd_nb][i->a].output, 2);
 		write(2, "\n", 1);
 		error_on_redir(r, 0, i);
@@ -55,7 +55,7 @@ int	exec_double_output(t_readed *r, int cmd_nb, t_index *i)
 	fd = open(r->re[cmd_nb][i->a].output, O_RDWR | O_CREAT | O_APPEND, 0644);
 	if (fd == -1)
 	{
-		write(2, "Minishell: Problem with file: ", 32);
+		write(2, "Minishell: Problem with file: ", 31);
 		ft_putstr_fd(r->re[cmd_nb][i->a].output, 2);
 		write(2, "\n", 1);
 		error_on_redir(r, cmd_nb, i);

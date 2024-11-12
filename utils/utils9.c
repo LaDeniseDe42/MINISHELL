@@ -43,10 +43,8 @@ void	reset_fds(int base_fds[2])
 char	*ft_give_path(char **env)
 {
 	int	line;
-	int	i;
 
 	line = 0;
-	i = 0;
 	while (env[line])
 	{
 		if (ft_strncmp_pipex("PATH=", env[line], 5) == 0)

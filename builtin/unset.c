@@ -85,7 +85,9 @@ void	unset_my_goat(t_readed *mini, char **temp)
 
 	i = 1;
 	if (!temp[i])
+	{
 		;
+	}
 	if (temp[i])
 	{
 		while (temp[i])

@@ -102,11 +102,9 @@ int	good_cara(char **temp)
 char	**add_one_line(char **old_tb, char *new_line_to_add)
 {
 	int		i;
-	int		j;
 	char	**buf;
 
 	i = 0;
-	j = 0;
 	buf = ft_calloc(ft_count_tb(old_tb) + 2, sizeof(char *));
 	while (i < ft_count_tb(old_tb))
 	{
